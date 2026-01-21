@@ -4,12 +4,15 @@ CONFIG_ARCH_SUNXI=y
 CONFIG_MACH_SUN8I_V3S=y
 CONFIG_DRAM_CLK=360
 CONFIG_DRAM_ZQ=14779
+#
 # CONFIG_VIDEO_LCD_MODE="x:480,y:272,depth:18,pclk_khz:10000,le:56,ri:16,up:6,lo:3,hs:40,vs:10,sync:3,vmode:0"
 CONFIG_VIDEO_LCD_MODE="x:800,y:480,depth:18,pclk_khz:28500,le:80,ri:48,up:6,lo:3,hs:32,vs:7,sync:3,vmode:0"
 # CONFIG_VIDEO_LCD_MODE="x:800,y:600,depth:18,pclk_khz:40000,le:88,ri:40,up:23,lo:1,hs:128,vs:4,sync:3,vmode:0"
-# CONFIG_VIDEO_LCD_MODE="x:1024,y:600,depth:18,pclk_khz:49000,le:144,ri:40,up:11,lo:3,hs:104,vs:10,sync:3,vmode:0"
+# CONFIG_VIDEO_LCD_MODE="x:1024,y:600,depth:18,pclk_khz:41000,le:40,ri:8,up:6,lo:4,hs:32,vs:8,sync:3,vmode:0"
 # CONFIG_VIDEO_LCD_MODE="x:1024,y:768,depth:18,pclk_khz:30000,le:128,ri:32,up:9,lo:3,hs:96,vs:4,sync:3,vmode:0"
 # CONFIG_VIDEO_LCD_MODE="x:1280,y:720,depth:18,pclk_khz:31500,le:80,ri:48,up:6,lo:3,hs:32,vs:5,sync:3,vmode:0"
+# CONFIG_VIDEO_LCD_MODE="x:1280,y:800,depth:18,pclk_khz:35000,le:80,ri:48,up:6,lo:3,hs:32,vs:6,sync:3,vmode:0"
+#
 CONFIG_VIDEO_LCD_BL_PWM="PB4"
 # CONFIG_VIDEO_LCD_BL_PWM_ACTIVE_LOW is not set
 CONFIG_DEFAULT_DEVICE_TREE="sun8i-v3s-prime-m"
