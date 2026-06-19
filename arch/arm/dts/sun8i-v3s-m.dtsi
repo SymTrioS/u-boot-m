@@ -112,7 +112,7 @@
 			interrupts = <GIC_SPI 60 IRQ_TYPE_LEVEL_HIGH>;
 			status = "disabled";
 			#address-cells = <1>;
-			#size-cells = <0>;
+			#size-cells = <1>;
 		};
 
 		mmc1: mmc@01c10000 {
@@ -131,7 +131,7 @@
 			interrupts = <GIC_SPI 61 IRQ_TYPE_LEVEL_HIGH>;
 			status = "disabled";
 			#address-cells = <1>;
-			#size-cells = <0>;
+			#size-cells = <1>;
 		};
 
 		mmc2: mmc@01c11000 {
@@ -150,7 +150,7 @@
 			interrupts = <GIC_SPI 62 IRQ_TYPE_LEVEL_HIGH>;
 			status = "disabled";
 			#address-cells = <1>;
-			#size-cells = <0>;
+			#size-cells = <1>;
 		};
 
 		usb_otg: usb@01c19000 {
@@ -221,6 +221,15 @@
 				drive-strength = <30>;
 				bias-pull-up;
 			};
+			
+			mmc1_pins: mmc1-pins {
+				pins = "PG0", "PG1", "PG2", "PG3",
+				       "PG4", "PG5";
+				function = "mmc1";
+				drive-strength = <30>;
+				bias-pull-up;
+			};
+
 		};
 
 		timer@01c20c00 {
